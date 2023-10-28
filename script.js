@@ -1,8 +1,7 @@
 const filmsList = document.getElementById('films');
 const movieDetails = document.getElementById('movie-details');
 const buyTicketButton = document.getElementById('buy-ticket');
-const deleteButton = document.getElementById('delete-movie'); // Add a delete button
-
+const deleteButton = document.getElementById('delete-movie'); // Added a delete button
 
 // Fetch the list of movies from the server
 fetch(' http://localhost:3000/films')
