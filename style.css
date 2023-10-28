@@ -1,66 +1,86 @@
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  /* Body styles */
+  body {
     font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.movie-list {
-    width: 30%;
-    border: 1px solid #ccc;
-    padding: 1rem;
-}
-
-.movie-list h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-ul#films {
-    list-style: none;
-}
-
-ul#films li {
-    cursor: pointer;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    margin: 0.5rem 0;
-    transition: background-color 0.3s;
-}
-
-ul#films li:hover {
     background-color: #f0f0f0;
-}
-
-.movie-details {
-    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Main container styles */
+  .movie-list {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-details {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Movie list styles */
+  #films {
+    list-style: none;
+  }
+  
+  .film.item {
+    padding: 10px;
+    margin: 5px 0;
     border: 1px solid #ccc;
-    padding: 1rem;
-}
-
-.movie-details img {
-    max-width: 100%;
-}
-
-footer {
-    background-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .film.item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Movie details styles */
+  #movie-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #movie-details img {
+    max-width: 500px;
+    height: 500px;
+    margin-top: 10px;
+  }
+  
+  /* Buy ticket button styles */
+  #buy-ticket {
+    background-color: #007bff;
     color: #fff;
-    text-align: center;
-    padding: 0.5rem;
-}
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #buy-ticket:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Sold out movie styles */
+  .sold-out {
+    color: #ff0000;
+    font-weight: bold;
+  }
+  
